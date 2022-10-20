@@ -1,0 +1,20 @@
+<h1>Welcome to this tutorial on Angular Components</h1>
+
+<h1 style="text-align:center;">Welcome {{name}}</h1>
+<h1 style="text-align:center;">Welcome to the {{topic}} tutorial</h1>
+
+<img [src]="image" alt="Angular Logo" style="height:100px; width:100px" class="center">
+
+<br/>
+<div class="center">
+    <button (click)="onClick()" class="center">Subscribe to learn more</button>
+</div>
+
+<div>
+    <input [(ngModel)]="random" type="text">
+    <br>
+    {{random}}
+</div>
+
+<app-new-component></app-new-component>
+<app-img-component></app-img-component>
