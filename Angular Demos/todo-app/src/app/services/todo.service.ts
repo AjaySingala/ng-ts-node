@@ -9,7 +9,8 @@ import { TodoItem } from '../classes/todo-item';
 
 export class TodoService {
 
-  private url = 'https://localhost:7038';
+  //private url = 'https://localhost:7038';
+  private url = 'https://ajs-todoapi.azurewebsites.net'
 
   constructor(private http: HttpClient) { }
 
