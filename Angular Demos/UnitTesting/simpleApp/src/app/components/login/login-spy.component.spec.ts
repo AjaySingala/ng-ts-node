@@ -2,7 +2,7 @@
 import { AuthService } from 'src/app/services/auth-service';
 import { LoginComponent } from './login.component';
 
-describe('LoginComponent', () => {
+describe('SpyLoginComponent', () => {
   let component: LoginComponent;
   let service: AuthService;
   let spy: any;

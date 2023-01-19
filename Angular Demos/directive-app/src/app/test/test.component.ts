@@ -45,9 +45,20 @@ export class TestComponent implements OnInit {
 
   Fruits = ["mango","apple","orange","grapes"]; 
   
-  constructor() { }
+  serverID: number = 10;  
+  serverStatus: string = 'Offline';
+  constructor() { 
+    this.serverStatus = Math.random() > 0.5 ? 'Online' : 'Offline';  
+  }
 
   ngOnInit(): void {
+  }
+
+  getServerStatus() {  
+    return this.serverStatus;  
+  }  
+  getColor() {  
+    return this.serverStatus === 'Online' ? 'green' : 'red';  
   }
 
   trackByData(index:number, studentArr:any): number { 

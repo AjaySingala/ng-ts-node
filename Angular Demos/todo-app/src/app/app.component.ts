@@ -30,7 +30,7 @@ export class AppComponent {
   addTodoItem() {
     let item = new TodoItem();
     item.id = 0;
-    item.name = "mount everest";
+    item.name = "walk the dog";
     item.isComplete = false;
 
     this.todoService.addTodoItem(item).subscribe(
@@ -40,7 +40,7 @@ export class AppComponent {
   }
 
   deleteTodoItem() {
-    this.todoService.deleteTodoItem(3).subscribe(
+    this.todoService.deleteTodoItem(7).subscribe(
       (response) => { console.log(response); },
       (error) => { console.log(error); }
     );

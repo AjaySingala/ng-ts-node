@@ -1,0 +1,5 @@
+<h2>Bind to Dropdown</h2>
+<select (change)="onSelect($event)">
+    <option *ngFor="let product of products" [value]="product.id">{{product.name}}</option>
+  </select>
+<div>selection={{selectedProduct.name}}</div>

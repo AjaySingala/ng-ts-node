@@ -45,9 +45,15 @@
    </li> 
 </ul>
 
+<!-- ngStyle -->
 <p [ngStyle]="{'color': 'blue', 'font-size': '14px'}"> 
     paragraph style is applied using ngStyle 
 </p>
+
+<div>
+    <p [ngStyle]="{backgroundColor: getColor()}"  
+    [ngClass]="{Online: serverStatus === 'Online'}">  Server  with ID {{serverID}} is {{serverStatus}}. </p>  
+</div>
 
 <!-- ngClass -->
 <div class="container"> 

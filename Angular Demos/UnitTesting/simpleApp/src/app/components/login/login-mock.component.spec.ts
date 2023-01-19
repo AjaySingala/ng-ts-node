@@ -9,7 +9,7 @@ class MockAuthService {   // (1)
   }
 }
 
-describe('LoginComponent', () => {
+describe('MockLoginComponent', () => {
   let component: LoginComponent;
   let service: MockAuthService;
 

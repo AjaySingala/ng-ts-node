@@ -50,14 +50,14 @@ export class AppComponent {
   }
 
   updatePost() {
-    this.crudService.updatePost({"userID": 1, "id": 101, "title": "Ajay", "body": "test by ajay singala"}).subscribe(
+    this.crudService.updatePost(101, {"userID": 1, "id": 101, "title": "Ajay", "body": "test by ajay singala"}).subscribe(
       (response) => { console.log(response); },
       (error) => { console.log(error); }
     )
   }
 
   deletePost() {
-    this.crudService.deletePost().subscribe(
+    this.crudService.deletePost(101).subscribe(
       (response) => { console.log(response); },
       (error) => { console.log(error); }
     )

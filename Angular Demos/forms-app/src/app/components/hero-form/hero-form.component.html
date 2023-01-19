@@ -11,7 +11,7 @@
                     </div> -->
                     <div *ngIf="firstname.invalid && (firstname.dirty || firstname.touched)" class="alert alert-danger">
                         <div *ngIf="firstname.errors?.['required']">
-                            FirstName is required.
+                            Please enter Firstname.
                           </div>
                     </div>
             </div>
@@ -21,7 +21,7 @@
                 <input type="text" class="form-control" id="city" 
                     required [(ngModel)]="cityname" name="city" #city="ngModel">
                     <div [hidden]="city.valid || city.pristine" class="alert alert-danger">
-                        city is required
+                        City is required
                     </div>
             </div>
 
