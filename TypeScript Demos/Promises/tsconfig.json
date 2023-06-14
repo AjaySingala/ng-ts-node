@@ -1,0 +1,12 @@
+// tsconfig.json
+{
+    "files": [
+        "./PromiseRandomInt.ts"
+    ],
+    "compilerOptions": {
+        "lib": [
+            "DOM",
+            "ES2020"
+        ]
+    }
+}
